@@ -2,7 +2,7 @@ require 'telegram/bot'
 require_relative 'commands/drink_water'
 require_relative 'commands/help'
 
-# rubocop:disable Layout/LineLength
+# rubocop:disable Layout/LineLength, Metrics/MethodLength
 
 class Bot
   def initialize
@@ -29,4 +29,4 @@ class Bot
     end
   end
 end
-# rubocop:enable Layout/LineLength
+# rubocop:enable Layout/LineLength, Metrics/MethodLength
