@@ -15,7 +15,7 @@ class MessageHelper
   end
 
   def help_message
-    case message.text
+    case message
     when '/start'
       StartBot.new(bot, message).answer
     when '/stop'
