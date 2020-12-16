@@ -5,6 +5,7 @@ require_relative 'commands/glasses'
 require_relative 'commands/start_bot'
 require_relative 'commands/stop_bot'
 
+# rubocop:disable Layout/LineLength
 class MessageHelper
   attr_accessor :bot, :message
 
@@ -30,3 +31,4 @@ class MessageHelper
     end
   end
 end
+# rubocop:enable Layout/LineLength

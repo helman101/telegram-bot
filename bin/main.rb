@@ -15,4 +15,3 @@ def start_bot(token)
 end
 
 start_bot(token)
-
