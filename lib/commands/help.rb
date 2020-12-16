@@ -1,10 +1,11 @@
 require 'telegram/bot'
-require_relative '../remby_bot'
 
 class Help
-  @help = {}
+  attr_accessor :bot, :message
 
-  def initialize
+  def initialize(bot, message)
+    @bot = bot
+    @message = message
     @help = { start: 'Start remby_bot when you whant',
               stop: 'Send remby_bot to sleep',
               help: 'You are seeing it!',
@@ -12,10 +13,15 @@ class Help
   end
 
   def display_help
-    help = ''
+    descriptions = ''
     @help.each do |key, value|
-      help += "/#{key}: #{value}\n\n"
+      descriptions += "/#{key}: #{value}\n\n"
     end
-    help
+    descriptions
+  end
+
+  def answer
+    commands = display_help
+    bot.api.send_message(chat_id: message.chat.id, text: commands.to_s)
   end
 end
