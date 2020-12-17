@@ -1,7 +1,7 @@
 require 'telegram/bot'
 
 class Help
-  attr_accessor :bot, :message
+  attr_reader :bot, :message
 
   def initialize(bot, message)
     @bot = bot

@@ -7,7 +7,7 @@ require_relative 'commands/stop_bot'
 
 # rubocop:disable Layout/LineLength
 class MessageHelper
-  attr_accessor :bot, :message
+  attr_reader :bot, :message
 
   def initialize(bot, message)
     @bot = bot

@@ -2,7 +2,7 @@ require 'telegram/bot'
 
 # rubocop:disable Layout/LineLength
 class StartBot
-  attr_accessor :bot, :message
+  attr_reader :bot, :message
 
   def initialize(bot, message)
     @bot = bot
