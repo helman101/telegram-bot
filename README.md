@@ -2,11 +2,11 @@
 
 # Remby the Telegram bot
 
-> Remby is a bot made with Ruby best practices, connected with the Telegram APIs thank to telegram-ruby-bot gem
+> Remby is a bot made with Ruby best practices, connected with the Telegram APIs thanks to the telegram-ruby-bot gem
 
 ![screenshot](./img/bot_screenshot.PNG)
 
-Additional description about the project and its features.
+Remby is a simple telegram bot created to help you to know how much water you have to drink water. 
 
 ## Built With
 
@@ -14,35 +14,64 @@ Additional description about the project and its features.
 - telegram-bot-ruby gem
 - Heroku
 
-### Install
+## Getting Started
 
-if you want to see the bot in action you only have to: 
+To get a local copy up and running follow these simple example steps.
+- Go to your terminal
+- Clone the repo locally with `git clone https://github.com/helman101/telegram-bot.git`
+- Go to the project folder `cd telegram-bot`
+
+### Prerequisites
+
+- Ruby
+- Heroku
+
+### Try this bot
+
+If you want to see my bot in action you only have to: 
 
 - install [Telegram](https://telegram.org/apps)
 - An search for @remby13_bot or put this link http://t.me/remby13_bot in your browser 
-- You are ready to start to talk with remby
+- You are ready to start to talk with remby!
+
+### Get Telegram TOKEN
+
+To run the bot locally you must have a telegram bot TOKEN
+- Go to this [LINK](https://telegram.me/botfather) to start a conversation with BotFather
+- execute the `/newbot` command in the chat
+- Follow the simple steps
+- And thats all, now your have your own TOKEN
+
+### Implement TOKEN
+
+- Go to `bin/main.rb`
+- Change `<TELEGRAM_API_TOKEN>` for the TOKEN you got
+
+### Run tests
+
+- run `ruby bin/main.rb` to run the bot locally 
 
 ### Deployment
 
-if you want to deploy your own bot:
+If you want to deploy your own bot:
 
-- Register in [Heroku](https://id.heroku.com/login)
-- install Heroku (CLI)
-- create your bot app in Heroku
+- Register in [Heroku](https://www.heroku.com/)
+- Install Heroku (CLI)
+- Create your bot app in Heroku
 
-## Authors
+## Author
 
 👤 **Andres**
 
 - GitHub: [@helman101](https://github.com/helman101)
-- LinkedIn: [LinkedIn](https://linkedin.com/helman101/)
+- LinkedIn: [helman101](https://www.linkedin.com/in/helman101/)
 
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/helman101/telegram-bot/issues).
 
 ## Show your support
 
@@ -50,4 +79,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://github.com/helman101/telegram-bot/blob/README/LICENSE) licensed.
